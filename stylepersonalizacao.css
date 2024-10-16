@@ -177,6 +177,7 @@ body {
     height: 150px;
     align-items: center;
     padding: 15px;
+
 }
 
 .box1 p{
@@ -186,9 +187,73 @@ body {
     margin: 0;
 }
 
-.branco{
-    background-color: white;
-    width: 30px;
-    height: 30px;
+.cores{
+    display: inline-flex;
+    gap: 10px;
+    align-items: center;]
+    margin-bottom: 10px;
 }
 
+.branco{
+    background-color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+}
+
+.preto{
+    background-color: black;
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+}
+
+.azul{
+    background-color: blue;
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+}
+
+.cores2{
+    display: inline-flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.vermelho{
+    background-color: red;
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+}
+
+.roxo{
+    background-color: #8F00FF;
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+}
+
+.colorido{
+    background: linear-gradient(180deg, #F00 0%, #FFA800 14%, #FFFE00 27.5%, #8FFF00 42.5%, #00D1EE 54.5%, #0038FF 66.5%, #7F00FD 78.5%, #FF00C7 88.5%, #E20000 100%);Linear Gradient;
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+}
+
+
+.box2{
+    border-radius: 20px;
+    border: 3px solid rgba(207, 146, 240, 0.45);
+    width: 250px;
+    height: 150px;
+    align-items: center;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+.teclado{
+    width: 500px;
+    height: auto;
+}

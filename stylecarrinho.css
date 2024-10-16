@@ -373,3 +373,22 @@ body {
     font-style: normal;
     font-weight: 400;
 }
+
+.finalizar {
+    border-radius: 10px;
+    background: #7F20B3;
+    grid-column: 11 / 16;
+    grid-row: 10 / 11;
+}
+
+.finalizar h1 {
+    color: #FFF;
+    font-family: "PT Sans Caption";
+    font-size: 27px;
+    font-style: normal;
+    font-weight: 700;
+    text-align: center;
+}
+ .finalizar a {
+    text-decoration: none;
+ }

@@ -1,0 +1,44 @@
+.corpo{
+    display: grid;
+    grid-column: 1 / 15;
+    grid-row: 4 / 21;
+    grid-template-columns: repeat(14, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+    column-gap: 15px;
+    row-gap: 15px;
+}
+
+#agradecimento {
+    grid-column: 2 / 14;
+    grid-row: 2 / 14;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+#agradecimento h1 {
+    color: #FFF;
+    text-align: center;
+    font-family: "PT Sans Caption";
+    font-size: 75px;
+    font-style: normal;
+    font-weight: 700;
+}
+
+#agradecimento div {
+    width: 750px;
+    height: 4px;
+    background: rgba(207, 146, 240, 0.45);
+}
+
+#agradecimento a h1 {
+    color: #CF92F0;
+    text-align: center;
+    font-family: "PT Sans Caption";
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    text-decoration-line: underline;
+}

@@ -140,6 +140,7 @@ body {
     display: flex;
     justify-content: center;
     justify-content: space-between;
+    z-index: 2;
 }
 
 #seta1, #seta2 {
