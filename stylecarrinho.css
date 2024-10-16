@@ -1,0 +1,375 @@
+body {
+    height: 130vh;
+}
+
+.corpo{
+    /* background-color: rgb(255, 213, 0); */
+    display: grid;
+    grid-column: 1 / 15;
+    grid-row: 4 / 21;
+    grid-template-columns: repeat(14, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    column-gap: 20px;
+    row-gap: 10px;
+    padding: 20px
+}
+
+.meucarrinho {
+    grid-column: 1 / 4;
+    grid-row: 1 /2;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: auto;
+}
+
+.meucarrinho img {
+    width: 40px;
+    height: 40px;
+}
+
+.meucarrinho h1 {
+    font-family: "PT Sans Caption", sans-serif;
+    color: #FFF;
+    font-size: 20px;
+    padding-left: 15px;
+}
+
+#produto {
+    font-family: "PT Sans Caption", sans-serif;
+    color: #FFF;
+    grid-column: 3 / 4;
+    grid-row: 2/ 3;
+    margin: auto;
+}
+
+#produto h1 {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+#quantidade {
+    font-family: "PT Sans Caption", sans-serif;
+    color: #FFF;
+    grid-column: 7 / 10;
+    grid-row: 2/ 3;
+    margin: auto;
+}
+
+#quantidade h1 {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+#valor {
+    font-family: "PT Sans Caption", sans-serif;
+    color: #FFF;
+    grid-column: 9 / 11;
+    grid-row: 2/ 3;
+    margin: auto;
+}
+
+#valor h1 {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+#confirma {
+    grid-column: 1 / 2;
+    grid-row: 4 / 5;
+    margin: auto;
+}
+
+#naoconfirma {
+    grid-column: 1 / 2;
+    grid-row: 7 / 8;
+    margin: auto;
+}
+
+#confirma img, #naoconfirma img {
+    width: 25px;
+    height: 25px;
+    object-fit: contain;
+}
+
+.produto1 {
+    grid-column: 2 / 11;
+    grid-row: 3 / 6;
+    border: 3px solid rgba(207, 146, 240, 0.45);
+    border-radius: 30px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3,1fr);
+}
+
+.produto2 {
+    grid-column: 2 / 11;
+    grid-row: 6 / 9;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3,1fr);
+    border: 3px solid rgba(207, 146, 240, 0.45);
+    border-radius: 30px;
+}
+
+.produto1 img, .produto2 img  {
+    border-radius: 35px;
+    padding: 15px;
+    grid-row: 1 / 4;
+    grid-column: 1 / 2;
+    margin: auto;
+    object-fit: contain;
+    width: 150px;
+}
+
+.produto1 h1, .produto2 h1 {
+    grid-column: 2 / 3;
+    grid-row: 2 /3;
+    color: #FFF;
+    font-family: "PT Sans Caption";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    width: 300px;
+}
+
+.produto1 p, .produto2 p {
+    grid-column: 3 / 4;
+    grid-row: 2/3;
+    color: #FFF;
+    font-family: "PT Sans Caption";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    margin: auto;
+}
+
+.produto1 h3, .produto2 h3 {
+    grid-column: 4 / 5;
+    grid-row: 2 / 3;
+    color: #FFF;
+    font-family: "PT Sans Caption";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    margin: auto;
+}
+
+.produto2 h1, .produto2 p, .produto2 h3 {
+    opacity: 0.7;
+}
+
+.fim {
+    grid-column: 2 / 11;
+    grid-row: 9 / 11;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    row-gap: 10px;
+    column-gap: 10px;;
+}
+
+#limpar {
+    border-radius: 15px;
+    background: #7F20B3 ;
+    grid-column: 4 / 5;
+    grid-row: 1 / 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 5px 20px;
+}
+
+#limpar h1 {
+    color: #FFF;
+    font-family: "PT Sans Caption";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+}
+
+.desconto {
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(2,1fr);
+    border: 3px solid rgba(207, 146, 240, 0.45);
+    border-radius: 15px;
+    column-gap: 15px;
+    padding: 10px 5px;
+}
+
+.frete {
+    grid-column: 3 / 5;
+    grid-row: 2 / 3;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(2,1fr);
+    border: 3px solid rgba(207, 146, 240, 0.45);
+    border-radius: 15px;
+    column-gap: 15px;
+    padding: 10px 5px;
+}
+
+.desconto h1, .frete h1 {
+    grid-column: 1 / 4;
+    color: #FFF;
+    font-family: "PT Sans Caption";
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.cupom {
+    border-radius: 10px;
+    border: 2px solid #9E37D6;
+    background: rgba(242, 218, 255, 0.85);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);    
+    grid-column: 1 / 4;
+    grid-row: 2 / 3;
+}
+
+.cupom h1 {
+    color: #AC60D6;
+    font-family: Poppins;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    padding-left: 10px;
+}
+
+.aplicar {
+    border-radius: 10px;
+    background: #7F20B3;
+    color: #FFF;
+    font-family: "PT Sans Caption";
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    grid-column: 4 / 6;
+    grid-row: 2 / 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 8px 30px;
+}
+
+.resumo {
+    grid-column: 11 / 16;
+    grid-row: 2 / 10;
+    border-radius: 30px;
+    border: 3px solid rgba(207, 146, 240, 0.45);
+    background: rgba(217, 217, 217, 0.00);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+
+}
+
+.resumo h2 {
+    color: #FFF;
+    font-family: "PT Sans Caption";
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    margin: auto;
+    grid-column: 1 / 5;
+    grid-row: 1 / 2;
+}
+
+#subtotal {
+    color: #FFF;
+    font-family: "PT Sans Caption";
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 400;
+    grid-column: 1 / 5;
+    grid-row: 2 / 3;
+    display: flex;
+    justify-content: space-around
+}
+
+#total {
+    grid-column: 1 / 5;
+    grid-row: 3 /4 ;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 15px;
+    background: rgba(242, 218, 255, 0.23);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    align-items: center;
+}
+
+#total h1 {
+    color: #FFF;
+    font-family: "PT Sans Caption";
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+/* .pagamento {
+    grid-column: 1 / 5;
+    grid-row: 4 / 6;
+    /* display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr); */
+
+
+#vista {
+    margin: auto;
+    grid-column: 1 /3;
+    grid-row: 4 / 6;
+    text-align: center;
+}
+
+#cartao {
+    margin: auto;
+    grid-column: 3 / 5;
+    grid-row: 4 / 6;
+    text-align: center;
+    padding-top: 3%;
+}
+
+#vista p:nth-child(1), #cartao p:nth-child(1) {
+    color: #9E37D6;
+    font-family: "PT Sans Caption";
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+#vista h1, #cartao h1 {
+    color: #9E37D6;
+    font-family: "PT Sans Caption";
+    font-size: 27px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+#vista p:nth-child(3), #cartao p:nth-child(3) {
+    color: #FFF;
+    font-family: "PT Sans Caption", sans-serif;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+#ou {
+    grid-column: 2 / 4;
+    grid-row: 6 / 7;
+    margin: auto;
+}
+
+#ou h1 {
+    color: #FFF;
+    font-family: "PT Sans Caption";
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 400;
+}

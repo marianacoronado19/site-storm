@@ -134,110 +134,61 @@ body {
     padding-top: 3px;
 }
 
-.anuncio {
-    grid-row: 5 / 11;
-    grid-column: 1 /15;
+.corpo{
+    display: grid;
+    grid-column: 1 / 15;
+    grid-row: 4 / 21;
+    grid-template-columns: repeat(14, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+    column-gap: 15px;
+    row-gap: 15px;
+    margin: 0px;
+
     display: flex;
-    justify-content: center;
-    justify-content: space-between;
+    flex-direction: column;
 }
 
-#seta1, #seta2 {
-    width: 90px;
-    height: 80px;
-    margin: 7% 30px 0 30px;
+.seta{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    margin: 10px;
 }
 
-#seta1:hover, #seta2:hover {
-    cursor: pointer;
-}
-
-#computador {
-   width: 900px;
-   height: 325px;
-   border: solid 3px #50058d;
-}
-
-.produtos {
-    grid-row: 13 / 15;
-    grid-column: 2 / 14;
+.container{
+    margin-left: 50px;
     display: flex;
-    flex-wrap: wrap;
-    gap: 4rem;
-    justify-content: space-between;
+    flex-direction: column;
+    color: white;
+    font-family: PT Sans Caption;
+    font-weight: 700;
 }
 
-.produtos div {
-    object-fit: cover;
+.personalize{
+    font-size: 30px;
+    white-space: nowrap;
+    margin: 0px;
+    margin-bottom: 20px;
 }
 
-#p1, #p2, #p3, #p4, #p5, #p6, #p7, #p8 {
-    width: 200px;
-    height: 200px;
-    background: #F4BC21;
+.box1{
     border-radius: 20px;
-    transition: width 1s, height 1s, transform 1s;
+    border: 3px solid rgba(207, 146, 240, 0.45);
+    width: 250px;
+    height: 150px;
+    align-items: center;
+    padding: 15px;
 }
 
-.frente {
+.box1 p{
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    margin: 0;
+}
+
+.branco{
     background-color: white;
-    width: 200px;
-    height: 200px;
-    border-radius: 20px;
-    margin: -10px;
-    padding: 2px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    transition: width 1s, height 1s, transform 1s;
+    width: 30px;
+    height: 30px;
 }
 
-.frente p {
-    font-family: "PT Sans Caption", sans-serif;
-    font-weight: 500;
-    font-size: 15px;
-    text-align: justify;
-    word-spacing: 3px;
-    margin: 4px 2px 0 2px;
-    object-fit: cover;
-}
-
-.frente a {
-    text-decoration: none;
-    font-family: "PT Sans Caption", sans-serif;
-    font-weight: 500;
-    font-size: 15px;
-    color: black;
-}
-
-#preco {
-    font-weight: 400;
-    opacity: 0;
-    transition: all 0.5s;
-}
-
-#preco span {
-    font-weight: 600;
-}
-
-#p1:hover, #p2:hover, #p3:hover, #p4:hover, #p5:hover, #p6:hover, #p7:hover, #p8:hover {
-    cursor: pointer; 
-    width: 215px;
-    height: 230px;
-}
-
-.frente:hover { 
-    cursor: pointer;
-    width: 208px;
-    height: 225px;
-}
-
-.frente:hover #preco {
-    opacity: 1;
-}
-
-#img {
-    width:100%;
-    height:130px;
-    border-radius: 20px;
-    margin: auto;
-    object-fit: contain;
-}
